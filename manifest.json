@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+
+  "name": "JIRA Swimlanes Extensions",
+  "description": "Adds extra functionailty to JIRA Agile boards",
+  "version": "0.1.0",
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://visualjazz.jira.com/*",
+                "https://isobartaskmanager.anz.dentsuaegis.com/*",
+                "https://isobarintranet.anz.dentsuaegis.com/*",
+                "https://isobartaskmanagerstaging.anz.dentsuaegis.com/*",
+                "https://isobarintranetstaging.anz.dentsuaegis.com/*"
+            ],
+            "js": [
+                "/js/jse.js"
+            ]
+        }
+    ]
+}
